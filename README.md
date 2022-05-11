@@ -72,3 +72,8 @@ maintab:Slider('FOV', 30 -- default, 10 -- min, 300 -- max, function(a)
     print(a)
 end)
 ```
+
+### Labels
+```lua
+maintab:Label('This is a label')
+```
