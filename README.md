@@ -28,7 +28,7 @@ local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/lader
 
 ### Create the GUI
 ```lua
-local win = Library:Create({
+local win = BlekLib:Create({
     Name = "Blek Library",
     StartupSound = {
         Toggle = false,
