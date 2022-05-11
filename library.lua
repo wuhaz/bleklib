@@ -536,3 +536,5 @@ function Library:Create(table)
 
     return tabHandler
 end
+
+return Library
