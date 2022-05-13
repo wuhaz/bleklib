@@ -18,14 +18,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main
 - dropdowns soon
 
 ## Documentation
-
+Shows an example of all the ui elements
 
 ## Loadstring
 ```lua
 local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
 ```
 
-# Create the GUI
+# Creating the UI
 ```lua
 local win = BlekLib:Create({
     Name = "Blek Library",
