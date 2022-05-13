@@ -1,6 +1,7 @@
 # BlekLib
 
 BlekLib is a open sourced Roblox UI library inspired by Dark Hub
+Support server: discord.gg/zen
 
 ## Loadstring
 ```lua
@@ -16,10 +17,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main
 
 - dropdowns soon
 
-Created by 'j#6066
-My server: https://discord.gg/mwfAyYZ57P
-
 ## Documentation
+
 
 ## Loadstring
 ```lua
