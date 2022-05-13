@@ -20,7 +20,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main
 ## Documentation
 Shows an example of all the ui elements
 
-## Loadstring
+# Load the library
 ```lua
 local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
 ```
@@ -37,42 +37,42 @@ local win = BlekLib:Create({
 })
 ```
 
-# Tabs
+# Creating a tab
 ```lua
 local maintab = win:Tab('Main')
 local charactertab = win:Tab('Character')
 local uitab = win:Tab('UI')
 ```
 
-# Buttons
+# Creating a button
 ```lua
 uitab:Button('Destroy GUI', function()
     win:Exit()
 end)
 ```
 
-# Toggles
+# Creating a toggle
 ```lua
 maintab:Toggle('Aimbot', function(v)
     aimbot = v
 end)
 ```
 
-# Textboxes
+# Creating a textbox
 ```lua
 maintab:Textbox('FOV', function(v)
     fov = v
 end)
 ```
 
-# Sliders
+# Creating a slider
 ```lua
 maintab:Slider('FOV', 30 -- default, 10 -- min, 300 -- max, function(a)
     print(a)
 end)
 ```
 
-# Labels
+# Creating a label
 ```lua
 maintab:Label('This is a label')
 ```
