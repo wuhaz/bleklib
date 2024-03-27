@@ -5,7 +5,7 @@ Support server: discord.gg/zen
 
 ## Loadstring
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Consistt/Ui/main/UnLeaked"))()
 ```
 
 ## Features:
@@ -14,8 +14,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main
 - Textbox
 - Toggles
 - Labels
-
-- dropdowns soon
+- Dropdowns
 
 ## Documentation
 Shows an example of all the ui elements
@@ -25,16 +24,16 @@ Shows an example of all the ui elements
 local BlekLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
 ```
 
-# Creating the UI
+# Rank
 ```lua
-local win = BlekLib:Create({
-    Name = "Blek Library",
-    StartupSound = {
-        Toggle = false,
-        SoundID = "rbxassetid://6958727243",
-        TimePosition = 1
-    }
-})
+library.rank = "Dev"
+local Wm = library:Watermark("xsx example | v" .. library.version ..  " | " .. library:GetUsername() .. " | rank: " .. library.rank)
+local FpsWm = Wm:AddWatermark("fps: " .. library.fps)
+coroutine.wrap(function()
+    while wait(.75) do
+        FpsWm:Text("fps: " .. library.fps)
+    end
+end)()
 ```
 
 # Creating a tab
